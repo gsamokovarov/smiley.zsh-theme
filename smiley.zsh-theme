@@ -19,7 +19,7 @@ prompt_vcs () {
 
 function {
     if [[ -n "$SSH_CLIENT" ]]; then
-        PROMPT_HOST="($HOST)"
+        PROMPT_HOST=" ($HOST)"
     else
         PROMPT_HOST=''
     fi
