@@ -5,7 +5,7 @@
 export SMILEY_HAPPY_FACE="☺ "
 export SMILEY_SAD_FACE="☹ "
 
-local smiley_or_sad_face="%(?:%{$fg_bold[yellow]%}%B$(SMILEY_HAPPY_FACE)%b:%{$fg_bold[red]%}%B$(SMILEY_SAD_FACE)%b)"
+local smiley_or_sad_face="%(?:%{$fg_bold[yellow]%}%B${SMILEY_HAPPY_FACE}%b:%{$fg_bold[red]%}%B${SMILEY_SAD_FACE}%b)"
 local remote_host_info=''
 if [[ -n "$SSH_CLIENT" ]]; then
   remote_host_info="%{$fg_bold[red]%}[%{$fg_no_bold[cyan]%}%B${HOST}%b%{$fg_bold[red]%}]%{$reset_color%} "
